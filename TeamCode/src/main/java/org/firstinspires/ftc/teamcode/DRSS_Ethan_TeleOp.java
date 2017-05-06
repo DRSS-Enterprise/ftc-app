@@ -94,9 +94,11 @@ public class DRSS_Ethan_TeleOp extends OpMode {
         }
 
         if(guardDown){
-            cannonSeal.setPosition(0.5);
+            cannonSeal.setPosition(1);
+            telemetry.addData("closed?", "open");
         } else{
-            cannonSeal.setPosition(0);
+            cannonSeal.setPosition(.75);
+            telemetry.addData("closed?", "closed");
         }
 
         //Sets the power for the left and right drive motors to the y position of their respective sticks.

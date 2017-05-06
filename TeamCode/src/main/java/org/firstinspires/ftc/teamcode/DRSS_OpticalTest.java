@@ -69,10 +69,10 @@ public class DRSS_OpticalTest extends OpMode {
       telemetry.addData("Move Servo?", moveServo);
 
         if(moveServo){
-            gateServo.setPosition(0);
+            gateServo.setPosition(1);
             telemetry.addData("runningtest",1);
         } else{
-            gateServo.setPosition(90);
+            gateServo.setPosition(.75);
             telemetry.addData("runningtest",2);
         }
 

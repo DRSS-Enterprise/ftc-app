@@ -80,8 +80,8 @@ public class New_DRSS_TeleOp1 extends OpMode {
 
     private double leftMotorPower;
     private double rightMotorPower;
-    private double gateopen = 0;
-    private double gateclosed = 0.5;
+    private double gateopen = 1;
+    private double gateclosed = 0.75;
 
     private int driveModifier = 1;
 

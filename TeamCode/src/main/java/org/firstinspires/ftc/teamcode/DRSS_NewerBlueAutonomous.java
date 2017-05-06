@@ -611,7 +611,7 @@ public class DRSS_NewerBlueAutonomous extends LinearOpMode{
         if(runTime.time() < 5500) {
             particleAccelerator.setPower(1.0);
             //particleLift.setPower(1.0);
-            cannonSeal.setPosition(opticalDistanceSensor.getLightDetected() <= 0.0043 ? 0.0:0.5);
+            cannonSeal.setPosition(opticalDistanceSensor.getLightDetected() <= 0.0043 ? 1.0:0.75);
         } else {
             particleAccelerator.setPower(0.0);
             particleLift.setPower(0.0);

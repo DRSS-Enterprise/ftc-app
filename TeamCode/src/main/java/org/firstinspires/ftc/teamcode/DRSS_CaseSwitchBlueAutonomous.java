@@ -284,7 +284,7 @@ public class DRSS_CaseSwitchBlueAutonomous extends LinearOpMode{
                 rightMotor.setPower(0.0);
                 reset();
                 //When the target is reached, increment the current step by one, stop both drive motors,
-                // and request a reset.
+                //and request a reset.
 
             }
 
