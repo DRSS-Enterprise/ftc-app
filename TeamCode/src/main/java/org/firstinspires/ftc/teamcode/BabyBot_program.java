@@ -23,7 +23,6 @@ public class BabyBot_program extends OpMode {
     DcMotor leftMotor;
     DcMotor rightMotor;
     ColorSensor colorSensor;
-    DigitalChannel led;
 
 
     public void init(){
@@ -36,9 +35,6 @@ public class BabyBot_program extends OpMode {
 
         colorSensor = hardwareMap.colorSensor.get("colorSensor");
 
-        led = hardwareMap.digitalChannel.get("led");
-
-        led.setState(false);
 
         gamepad1.setJoystickDeadzone((float)0.2);
     }
