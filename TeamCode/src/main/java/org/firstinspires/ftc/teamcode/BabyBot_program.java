@@ -36,7 +36,7 @@ public class BabyBot_program extends OpMode {
         colorSensor = hardwareMap.colorSensor.get("colorSensor");
 
 
-        gamepad1.setJoystickDeadzone((float)0.2);
+        //gamepad1.setJoystickDeadzone((float)0.2);
     }
 
     public void loop(){

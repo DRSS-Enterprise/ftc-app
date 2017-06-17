@@ -442,7 +442,7 @@ public class New_DRSS_TeleOp1 extends OpMode {
         }
 
         if(autoGate){
-            moveServo = (opticalDistanceSensor.getLightDetected() <= 0.0015);
+            moveServo = (opticalDistanceSensor.getLightDetected() <= 0.006);
             telemetry.addData("Move Servo?", moveServo);
             if(moveServo){
                 cannonSeal.setPosition(gateopen);

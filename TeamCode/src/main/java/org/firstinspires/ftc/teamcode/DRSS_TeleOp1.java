@@ -28,7 +28,8 @@ import com.qualcomm.robotcore.util.Range;
  */
 
 @TeleOp(name = "DRSS TeleOp1", group = "DRSS")
-
+@Deprecated
+@Disabled
 public class DRSS_TeleOp1 extends OpMode {
 
     private DcMotor leftMotor;

@@ -172,7 +172,7 @@ public class DRSS_Ethan_Auto extends OpMode {
     }
 
 
-
+//Steps
     public void loop(){
 
         if(currentStep == 1){ //Go forwards to the center vortex
@@ -206,22 +206,28 @@ public class DRSS_Ethan_Auto extends OpMode {
             rightMotor.setPower(1.0);
             if (leftMotor.getCurrentPosition() >= 17640 && rightMotor.getCurrentPosition() >= 15840){
                 currentStep++;
-            }
-        } else if (currentStep == 6) {
+            }//Fire two particles
+        } else if (currentStep == 6) { //Fire the cannon 1 revolution
             leftMotor.setPower(0.0);
             rightMotor.setPower(0.0);
             particleAccelerator.setPower(1.0);
             if (particleAccelerator.getCurrentPosition() == 1440) {
+                currentStep++;
+            }
 
+        } else if (currentStep == 7) { //Open the gate when we don't see a particle in the cannon
+
+
+            if (particleAccelerator.getCurrentPosition() == 1440) {
+                currentStep++;
             }
 
         }
 
 
 
-
     }
-
+//These may as well not exist, not used here
     public void stopMotors(){
         rightMotor.setPower(0);
         leftMotor.setPower(0);
